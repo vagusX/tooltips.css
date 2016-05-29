@@ -9,6 +9,8 @@ var AUTOPREFIXER_BROWSERS = [
 
 var production = Boolean(gobble.env() === 'production');
 
+var statics = gobble('demo');
+
 var styles = gobble('src').transform('sass', {
   src: 'index.scss',
   dest: 'tooltips.css',
@@ -17,13 +19,19 @@ var styles = gobble('src').transform('sass', {
   plugins:  [
     require('autoprefixer')({ browsers: AUTOPREFIXER_BROWSERS })
   ],
-  map: false
-}).transformIf(production, 'postcss', {
-  plugins: [require('cssnano')],
   dest: function ( src ) {
     return src.replace( '.css', '.min.css' );
   },
+  map: false
+}).transform('postcss', {
+  plugins: [require('cssnano')],
   map: true
 });
 
-module.exports = gobble([styles]);
+var processQueue = [styles, statics];
+
+if (production) {
+  processQueue = [styles];
+}
+
+module.exports = gobble(processQueue);
