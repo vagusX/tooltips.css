@@ -1,0 +1,32 @@
+{
+  "name": "tooltips.css",
+  "version": "0.0.1",
+  "description": "a pure css/sass tooltips",
+  "main": "src/index.sass",
+  "scripts": {
+    "dev": "node ./node_modules/.bin/gobble -p 8080",
+    "build": "rimraf dist && NODE_ENV=production node ./node_modules/.bin/gobble build dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vagusX/tooltips.css.git"
+  },
+  "keywords": [
+    "tooltips"
+  ],
+  "author": "vagusX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vagusX/tooltips.css/issues"
+  },
+  "homepage": "https://github.com/vagusX/tooltips.css#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.6.2",
+    "gobble": "^0.11.3",
+    "gobble-cli": "^0.7.0",
+    "gobble-postcss": "^0.3.0",
+    "gobble-sass": "^0.5.0"
+  }
+}
