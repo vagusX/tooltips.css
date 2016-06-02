@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta name="wap-font-scale" content="no">
+  <meta name="renderer" content="webkit">
+  <title>tooltips.css</title>
+  <link rel="stylesheet" type="text/css" href="./tooltips.min.css">
+  <style type="text/css">
+    body {
+      margin: 0;
+    }
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .sample-button {
+      margin: 20px;
+      width: 200px;
+      line-height: 40px;
+      text-align: center;
+      background-color: #2196F3;
+      color: #fff;
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+    }
+    .sample-button:hover {
+      background-color: #1976D2;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h3>This is a pure css Tooltips!</h3>
+    <h5>Github: <a href="https://github.com/vagusX/tooltips.css">https://github.com/vagusX/tooltips.css</a></h5>
+    <h5>Just hover those buttons blew</h5>
+    <div class="wrapper">
+      <div class="sample-button"
+        data-tooltip
+        data-tooltip-content="hello tip left"
+        data-tooltip-direction="right">tooltips right</div>
+      <div class="sample-button"
+        data-tooltip
+        data-tooltip-content="hello tip right"
+        data-tooltip-direction="left">tooltips left</div>
+      <div class="sample-button"
+        data-tooltip
+        data-tooltip-content="hello tip top"
+        data-tooltip-direction="top">tooltips top</div>
+      <div class="sample-button"
+        data-tooltip
+        data-tooltip-content="hello tip bottom"
+        data-tooltip-direction="bottom">tooltips bottom</div>
+    </div>
+  </center>
+</body>
+</html>

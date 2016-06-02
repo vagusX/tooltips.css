@@ -102,7 +102,7 @@ $horizonal-list: left, right;
 }
 
 @each $direction in top, bottom, left, right {
-  [data-tooltip-direction="#{$direction}"] {
+  [data-tooltip][data-tooltip-direction="#{$direction}"] {
     position: relative;
     cursor: pointer;
     @include get-margin-props($direction);
@@ -122,6 +122,7 @@ $horizonal-list: left, right;
       content: attr(data-tooltip-content);
       padding: $gap $gap * 2;
       font-size: 12px;
+      line-height: 1;
       color: #fff;
       background-color: $default-color;
       border-radius: 3px;
