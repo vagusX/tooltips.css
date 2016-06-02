@@ -1,6 +1,6 @@
 {
   "name": "tooltips.css",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "a pure css/sass tooltips",
   "main": "dist/tooltips.min.css",
   "scripts": {

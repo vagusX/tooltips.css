@@ -1,6 +1,6 @@
 bin
 demo
-.yml
+*.yml
 gobblefile.js
 .gobble
 .gobble-build
