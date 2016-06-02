@@ -1,8 +1,8 @@
 {
   "name": "tooltips.css",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "a pure css/sass tooltips",
-  "main": "src/index.sass",
+  "main": "dist/tooltips.min.css",
   "scripts": {
     "dev": "node ./node_modules/.bin/gobble -p 8082",
     "build": "rimraf dist && NODE_ENV=production node ./node_modules/.bin/gobble build dist/",
